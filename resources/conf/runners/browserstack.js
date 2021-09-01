@@ -43,7 +43,7 @@ for (let key in bsConfig) {
 				browserstackRunConfig["desiredCapabilities"] = {};
 			}
 			browserstackRunConfig["desiredCapabilities"].build =
-				process.env.BROWSERSTACK_BUILD_NAME ||
+				
 				bsConfig.build +
 					"-" +
 					Math.trunc(new Date().getTime() / 10000).toString();
